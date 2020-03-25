@@ -8,12 +8,6 @@
   </a>
 </div>
 
-> Short project description here!
-
-<div align="center">
-  <img width="300" src="https://tylermcginnis.com/tylermcginnis_glasses-300.png" alt="TylerMcGinnis.com Logo"/>
-</div>
-
 ## 📝 Description
 Add more general information about project. 
 
