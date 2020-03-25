@@ -1,24 +1,19 @@
 import React from 'react'
 
+import Loading from '../Loading'
+import PostsList from '../PostsList'
+
 const Posts = ({ type, posts, loading, error, fetchPosts }) => {
   React.useEffect(() => {
     fetchPosts(type)
   }, [type])
 
-  const renderPosts = posts => (
-    <ul>
-      {posts.map(post => (
-        <li key={post.id}>{JSON.stringify(post, null, 2)}</li>
-      ))}
-    </ul>
-  )
-
   return loading ? (
-    <p>Loading ...</p>
+    <Loading text={`Loading ${type} posts`} />
   ) : error ? (
     <p>{error}</p>
   ) : (
-    renderPosts(posts)
+    <PostsList posts={posts} />
   )
 }
 

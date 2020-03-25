@@ -1,35 +1,82 @@
 import React from 'react'
 import queryString from 'query-string'
 
-const Post = ({ location, info, comments, fetchPost }) => {
+import Loading from '../Loading'
+import Title from '../Title'
+import PostMetaInfo from '../PostMetaInfo'
+import Comment from '../Comment'
+
+import useStyles from './styles'
+
+const Post = ({
+  location,
+  info,
+  comments,
+  fetchPost
+}) => {
+  const classes = useStyles()
   const { id } = queryString.parse(location.search)
 
   React.useEffect(() => {
     fetchPost(id)
   }, [id])
 
-  const renderPostInfo = () =>
-    info.loading ? (
-      <p>Loading post info...</p>
-    ) : info.error ? (
-      <p>{info.error}</p>
-    ) : (
-      <p>Post info: {JSON.stringify(info.data, null, 2)}</p>
-    )
+  const renderPostInfo = ({
+    data,
+    error,
+    loading
+  }) => {
+    if (loading === true || !data) {
+      return <Loading text='Fetching post' />
+    }
 
-  const renderPostComments = () =>
-    comments.loading ? (
-      <p>Loading post comments...</p>
-    ) : comments.error ? (
-      <p>{comments.error}</p>
-    ) : (
-      <p>Post comments: {JSON.stringify(comments.data, null, 2)}</p>
+    const { url, title, id, by, time, descendants, text } = data
+
+    return (
+      <>
+        <h1 className='header'>
+          <Title url={url} title={title} id={id} />
+        </h1>
+        <PostMetaInfo
+          by={by}
+          time={time}
+          id={id}
+          descendants={descendants}
+        />
+        <p className={classes.text} dangerouslySetInnerHTML={{ __html: text }} />
+      </>
     )
+  }
+
+  const renderPostComments = ({
+    data,
+    error,
+    loading
+  }) => {
+    if (loading === true) {
+      return <Loading text='Fetching comments' />
+    }
+
+    if (data.length === 0) {
+      return <p>No comments yet</p>
+    }
+
+    return (
+      <>
+        {data.map((comment) =>
+          <Comment
+            key={comment.id}
+            comment={comment}
+          />
+        )}
+      </>
+    )
+  }
 
   return (
     <>
-      {renderPostInfo()}
-      {renderPostComments()}
+      {renderPostInfo(info)}
+      {renderPostComments(comments)}
     </>
   )
 }

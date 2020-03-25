@@ -15,6 +15,10 @@ export default {
 
     input: {
       backgroundColor: 'rgba(0,0,0,0.02)'
+    },
+
+    link: {
+      color: 'black'
     }
   },
 
@@ -34,6 +38,10 @@ export default {
 
     input: {
       backgroundColor: 'rgba(0,0,0,0.3)'
+    },
+
+    link: {
+      color: '#bebebe'
     }
   }
 }

@@ -30,24 +30,6 @@ const Nav = () => {
             New
           </NavLink>
         </li>
-        <li className={classes.navItem}>
-          <NavLink
-            className={classes.navLink}
-            activeClassName={classes.navLinkActive}
-            to='/user?id=bryanrasmussen'
-          >
-            User
-          </NavLink>
-        </li>
-        <li className={classes.navItem}>
-          <NavLink
-            className={classes.navLink}
-            activeClassName={classes.navLinkActive}
-            to='/post?id=22674342'
-          >
-            Post
-          </NavLink>
-        </li>
       </ul>
       <button
         onClick={toggleTheme}
