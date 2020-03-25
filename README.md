@@ -32,10 +32,6 @@
     <th>Dark</th>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/posts-light.png"/></td>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/posts-dark.png"/></td>
-  </tr>
-  <tr>
     <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/post-light.png"/></td>
     <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/post-dark.png"/></td>
   </tr>
