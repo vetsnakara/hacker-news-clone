@@ -13,7 +13,7 @@
 > Add more general information about project
 
 ## 📺 Preview
-  <table style="width: 100%">
+  <table style="width: 100%; background-color: white"">
   <tr>
     <th>Light</th>
     <th>Dark</th>
@@ -26,7 +26,7 @@
 
 <details>
 <summary>other views 👀</summary>
-  <table style="width: 100%">
+  <table style="width: 100%; background-color: white"">
   <tr>
     <th>Light</th>
     <th>Dark</th>
