@@ -1,5 +1,5 @@
 <h1 align="center">
-  Github Buttle - <a href="https://tm.dev/react-course-project/" target="_blank">Demo</a>
+  Soft "Hacker News" clone - <a href="https://sleepy-almeida-a073df.netlify.com/" target="_blank">Demo</a>
 </h1>
 
 <div align="center">
@@ -23,23 +23,26 @@ Add more general information about project.
 </p>
 
 ## ✨ Features
-* Feature #1
-* Feature #2
-* Feature #3
+* Use [Hacker News API](https://github.com/HackerNews/API)
+* Use React Hooks for side effects
+* Use React JSS for theming 
+* Use React Context API for toggling light/dark theme
 
 ## 🛠️ Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* __React__ for UI rendering
+* __Redux__ for state management
+* __Redux Thunk__ for API calls
+* __React Router__ for routing
+* __React JSS__ for styles
 
 ## 🚀 Setup
 ``` sh
-$ cd ../lorem
+$ git clone https://github.com/vetsnakara/hacker-news-clone.git
+$ cd hacker-news-clone
 $ npm install
 $ npm start
 ```
 
 ## 👷 Author
 **Konstantin Arakantsev**
-- Twitter: [@FranckAbgrall](https://twitter.com/FranckAbgrall)
-- Github: [@kefranabg](https://github.com/kefranabg)
+- Github: [@vetsnakara](https://github.com/vetsnakara)
