@@ -24,16 +24,22 @@ Add more general information about project.
 
 ## ✨ Features
 * Use [Hacker News API](https://github.com/HackerNews/API)
-* Use React Hooks for side effects
-* Use React JSS for theming 
-* Use React Context API for toggling light/dark theme
+* Pages:
+  * `/` - top stories
+  * `/new` - new stories
+  * `/user?id=username` - user metadata and his stories
+  * `/post?id=123456` - post metadata and related comments
+* Loading indicators
+* Theme button
 
 ## 🛠️ Technologies
 * __React__ for UI rendering
+* __React Hooks__ for side effects
+* __React Context__ for toggling light/dark theme
 * __Redux__ for state management
 * __Redux Thunk__ for API calls
 * __React Router__ for routing
-* __React JSS__ for styles
+* __React JSS__ for styles and theming
 
 ## 🚀 Setup
 ``` sh
