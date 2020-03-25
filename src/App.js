@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route
-// } from 'react-router-dom'
-
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router,
+  Switch,
+  Route
 } from 'react-router-dom'
 
 import { ThemeProvider } from './context/theme'
 
-import Container from './layout/Container'
 import GlobalStyles from './styles/GlobalStyles'
+import Container from './layout/Container'
 import Nav from './components/Nav/Nav'
-// import Popular from './components/Popular'
-// import Battle from './components/Battle/Battle'
-// import Results from './components/Results/Results'
+import Posts from './components/Posts'
+import Post from './components/Post'
+import User from './components/User'
 
 class App extends Component {
   render () {
@@ -29,11 +25,16 @@ class App extends Component {
               <Nav />
             </header>
             <main>
-              {/* <Switch>
-                <Route path='/' exact component={Popular} />
-                <Route path='/battle' exact component={Battle} />
-                <Route path='/battle/results' component={Results} />
-              </Switch> */}
+              <Switch>
+                <Route
+                  exact
+                  path='/'
+                  render={props => <Posts {...props} type='top' />}
+                />
+                <Route path='/post' component={Post} />
+                <Route path='/new' render={props => <Posts {...props} type='new' />} />
+                <Route path='/user' component={User} />
+              </Switch>
             </main>
           </Container>
         </Router>
