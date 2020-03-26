@@ -10,7 +10,7 @@
   <a href="https://sleepy-almeida-a073df.netlify.com/" target="_blank">Hacker News client</a>
 </h2>
 
-> A React & react-powered implementation of "soft" Hacker News client using its Firebase API
+> A React-powered implementation of "soft" Hacker News client using its Firebase API
 
 ### 📺 Preview
   <table style="width: 100%; background-color: white"">
