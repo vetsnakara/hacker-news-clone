@@ -12,7 +12,7 @@
 
 > Add more general information about project
 
-## 📺 Preview
+### 📺 Preview
   <table style="width: 100%; background-color: white"">
   <tr>
     <th>Light</th>
@@ -42,7 +42,7 @@
   </table>
 </details>
 
-## ✨ Features
+### ✨ Features
 * Use [Hacker News API](https://github.com/HackerNews/API)
 * Pages:
   * `/` - top stories
@@ -52,7 +52,7 @@
 * Loading indicators
 * Theme button
 
-## 🛠️ Technologies
+### 🛠️ Technologies
 * __React__ for UI rendering
 * __React Hooks__ for side effects
 * __React Context__ for toggling light/dark theme
@@ -61,7 +61,7 @@
 * __React Router__ for routing
 * __React JSS__ for styles and theming
 
-## 🚀 Setup
+### 🚀 Setup
 ``` sh
 $ git clone https://github.com/vetsnakara/hacker-news-clone.git
 $ cd hacker-news-clone
@@ -69,6 +69,6 @@ $ npm install
 $ npm start
 ```
 
-## 👷 Author
+### 👷 Author
 **Konstantin Arakantsev**
 - Github: [@vetsnakara](https://github.com/vetsnakara)
