@@ -6,11 +6,11 @@
   <img height="20" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"/>
 </a>
 
-<h1>
-  Soft "Hacker News" clone - <a href="https://sleepy-almeida-a073df.netlify.com/" target="_blank">Demo</a>
-</h1>
+<h2>
+  <a href="https://sleepy-almeida-a073df.netlify.com/" target="_blank">Hacker News client</a>
+</h2>
 
-> Add more general information about project
+> A React & react-powered implementation of "soft" Hacker News client using its Firebase API
 
 ### 📺 Preview
   <table style="width: 100%; background-color: white"">
